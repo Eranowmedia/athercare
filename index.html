@@ -9,7 +9,7 @@
   <meta content="" name="description">
   <meta content="" name="keywords">
 
-       
+<base href="https://shreyascyber.com/test/Medilab/">          
  
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
@@ -35,6 +35,74 @@
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
 </head>
+<style>
+    #appointment {
+      padding: 50px 0;
+      background-color: #f8f9fa;
+    }
+
+    .section-title {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .section-title h2 {
+      font-size: 36px;
+      font-weight: bold;
+      color: #007bff;
+      margin-bottom: 20px;
+    }
+
+    .section-title p {
+      font-size: 18px;
+      color: #6c757d;
+    }
+
+    .appointment .container {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 30px;
+      background-color: #ffffff;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .form-group {
+      margin-bottom: 20px;
+    }
+
+    .form-control {
+      padding: 12px;
+      font-size: 16px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+
+    .btn-primary {
+      background-color: #007bff;
+      color: white;
+      padding: 12px 25px;
+      font-size: 16px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      width: 100%;
+    }
+
+    .btn-primary:hover {
+      background-color: #0056b3;
+    }
+
+    #appointment-response-message {
+      text-align: center;
+      padding: 20px;
+      background-color: #28a745;
+      color: white;
+      border-radius: 5px;
+      margin-top: 20px;
+    }
+  </style>
+  
 
 <body>
 
@@ -58,7 +126,7 @@
   <header id="header" class="fixed-top">
     <div class="container d-flex align-items-center">
 
-      <h1 class="logo me-auto"><a >AetherCare </a></h1>
+      <h1 class="logo me-auto"><a>AetherCare </a></h1>
       <!-- Uncomment below if you prefer to use an image logo -->
       <!-- <a href="index.html" class="logo me-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
 
@@ -83,7 +151,7 @@
   <!-- ======= Hero Section ======= -->
   <section id="hero" class="d-flex align-items-center">
     <div class="container">
-      <h1>Welcome to Pharma</h1>
+      <h1>Welcome to AetherCare</h1>
       <h2>We offer a variety of services to meet your health needs</h2>
       <a href="#about" class="btn-get-started scrollto">Get Started</a>
     </div>
@@ -98,9 +166,9 @@
         <div class="row">
           <div class="col-lg-4 d-flex align-items-stretch">
             <div class="content">
-              <h3>Why Choose Athercare?</h3>
+              <h3>Why Choose Aethercare?</h3>
               <p>
-                Choose Pharma for unparalleled customer service, where personalized attention and expert advice are always at your fingertips. We offer convenient services like home delivery, automatic prescription refills, and    online ordering to make your healthcare experience seamless. Trust in our commitment to quality, as we rigorously ensure the safety and effectiveness of all our products.
+                Choose AetherCare for unparalleled customer service, where personalized attention and expert advice are always at your fingertips. We offer convenient services like home delivery, automatic prescription refills, and    online ordering to make your healthcare experience seamless. Trust in our commitment to quality, as we rigorously ensure the safety and effectiveness of all our products.
               </p>
               <div class="text-center">
                 <a href="#" class="more-btn">Learn More <i class="bx bx-chevron-right"></i></a>
@@ -149,8 +217,8 @@
           </div>
 
           <div class="col-xl-7 col-lg-6 icon-boxes d-flex flex-column align-items-stretch justify-content-center py-5 px-lg-5">
-            <h3>Welcome to Pharma</h3>
-            <p>At Pharma, we are dedicated to providing our community with a wide range of quality healthcare products and services. Our mission is to enhance the well-being of our customers by offering exceptional service, expert advice, and a comprehensive selection of pharmaceutical and health-related products</p>
+            <h3>Welcome to AetherCare</h3>
+            <p>At Aethercare, we are dedicated to providing our community with a wide range of quality healthcare products and services. Our mission is to enhance the well-being of our customers by offering exceptional service, expert advice, and a comprehensive selection of pharmaceutical and health-related products</p>
 
             <div class="icon-box">
               <div class="icon"><i class="bx bx-fingerprint"></i></div>
@@ -177,86 +245,73 @@
     </section><!-- End About Section -->
 
 
-    <!-- ======= Appointment Form Section ======= -->
-<section id="appointment" class="appointment">
+      <!-- ======= Appointment Form Section ======= -->
+  <section id="appointment" class="appointment">
     <div class="container">
-  
+
       <div class="section-title">
         <h2>Book an Appointment</h2>
         <p>Fill in the details below to schedule your appointment.</p>
       </div>
-  
+
       <div class="row mt-5">
         <div class="col-lg-8 mx-auto">
-  
+
           <!-- Appointment Form -->
-          <form id="appointment-form" novalidate>
+          <div id="appointment-form">
             <div class="row">
               <!-- Mobile Number Field -->
               <div class="col-md-6">
                 <div class="form-group">
                   <label for="mobileNumber">Mobile Number <span class="text-danger">*</span></label>
-                  <input type="text" class="form-control" id="mobileNumber" name="mobileNumber" placeholder="Enter your mobile number" required>
-                  <div class="invalid-feedback">
-                    Please enter a valid mobile number.
-                  </div>
+                  <input type="text" class="form-control" id="mobileNumber" placeholder="Enter your mobile number">
                 </div>
               </div>
-  
+
               <!-- Email Address Field -->
               <div class="col-md-6">
                 <div class="form-group">
                   <label for="emailAddress">Email Address <span class="text-danger">*</span></label>
-                  <input type="email" class="form-control" id="emailAddress" name="emailAddress" placeholder="Enter your email address" required>
-                  <div class="invalid-feedback">
-                    Please provide a valid email address.
-                  </div>
+                  <input type="email" class="form-control" id="emailAddress" placeholder="Enter your email address">
                 </div>
               </div>
-  
+
               <!-- Appointment Date Field -->
               <div class="col-md-6">
                 <div class="form-group">
                   <label for="appointmentDate">Appointment Date <span class="text-danger">*</span></label>
-                  <input type="date" class="form-control" id="appointmentDate" name="appointmentDate" required>
-                  <div class="invalid-feedback">
-                    Please select a valid appointment date.
-                  </div>
+                  <input type="date" class="form-control" id="appointmentDate">
                 </div>
               </div>
-  
+
               <!-- Appointment Time Field -->
               <div class="col-md-6">
                 <div class="form-group">
                   <label for="appointmentTime">Appointment Time <span class="text-danger">*</span></label>
-                  <input type="time" class="form-control" id="appointmentTime" name="appointmentTime" required>
-                  <div class="invalid-feedback">
-                    Please select a valid appointment time.
-                  </div>
+                  <input type="time" class="form-control" id="appointmentTime">
                 </div>
               </div>
-  
+
               <!-- Message Field -->
               <div class="col-md-12">
                 <div class="form-group">
                   <label for="message">Message (Optional)</label>
-                  <textarea class="form-control" id="message" name="message" rows="4" placeholder="Additional information (optional)"></textarea>
+                  <textarea class="form-control" id="message" rows="4" placeholder="Additional information (optional)"></textarea>
                 </div>
               </div>
             </div>
-  
-            <button type="submit" class="btn btn-primary">Book Appointment</button>
-          </form>
-  
+
+            <button class="btn btn-primary" onclick="sendToWhatsApp()">Send via WhatsApp</button>
+          </div>
+
           <div id="appointment-response-message" class="mt-3"></div>
-  
+
         </div>
       </div>
-  
+
     </div>
-  </section><!-- End Appointment Form Section -->
-  
-  
+  </section>
+
 
     <!-- ======= Counts Section ======= -->
     <section id="counts" class="counts">
@@ -307,7 +362,7 @@
 
         <div class="section-title">
           <h2>Services</h2>
-          <p>Discover the comprehensive services offered at Pharma to meet all your healthcare needs.</p>
+          <p>Discover the comprehensive services offered at Aethercare to meet all your healthcare needs.</p>
         </div>
 
         <div class="row">
@@ -591,35 +646,50 @@ document.addEventListener('DOMContentLoaded', function() {
       })
   })()
 
-  // Handle appointment form submission
-  document.getElementById('appointment-form').addEventListener('submit', function(event) {
-    event.preventDefault(); // Prevent form from refreshing the page
+  function sendToWhatsApp() {
+      // Collect input values
+      const mobileNumber = document.getElementById('mobileNumber').value.trim();
+      const emailAddress = document.getElementById('emailAddress').value.trim();
+      const appointmentDate = document.getElementById('appointmentDate').value.trim();
+      const appointmentTime = document.getElementById('appointmentTime').value.trim();
+      const message = document.getElementById('message').value.trim();
 
-    // Get form data
-    var mobileNumber = document.getElementById('mobileNumber').value;
-    var emailAddress = document.getElementById('emailAddress').value;
-    var appointmentDate = document.getElementById('appointmentDate').value;
-    var appointmentTime = document.getElementById('appointmentTime').value;
-    var message = document.getElementById('message').value;
+      // Validate required fields
+      if (!mobileNumber || !emailAddress || !appointmentDate || !appointmentTime) {
+        document.getElementById('appointment-response-message').innerHTML = "<p class='text-danger'>Please fill in all required fields.</p>";
+        return;
+      }
 
-    // If the form is invalid, return
-    if (!this.checkValidity()) {
-      return;
+      // Create the WhatsApp message
+      const whatsappMessage = `
+        *Appointment Details:*\n
+        *Mobile Number*: ${mobileNumber}\n
+        *Email Address*: ${emailAddress}\n
+        *Appointment Date*: ${appointmentDate}\n
+        *Appointment Time*: ${appointmentTime}\n
+        *Message*: ${message || "No additional message."}
+      `;
+
+      // Encode the message for the URL
+      const encodedMessage = encodeURIComponent(whatsappMessage);
+
+      // Generate the WhatsApp URL
+      const targetNumber = '9109220580'; // Replace with the actual number
+      const whatsappUrl = `https://wa.me/${targetNumber}?text=${encodedMessage}`;
+
+      // Redirect to WhatsApp
+      window.open(whatsappUrl, '_blank');
+
+      // Show a success message
+      document.getElementById('appointment-response-message').innerHTML = "<p class='text-success'>Redirecting to WhatsApp...</p>";
+
+      // Clear the form
+      document.getElementById('mobileNumber').value = '';
+      document.getElementById('emailAddress').value = '';
+      document.getElementById('appointmentDate').value = '';
+      document.getElementById('appointmentTime').value = '';
+      document.getElementById('message').value = '';
     }
-
-    // For demo purposes, log the form data to the console
-    console.log("Mobile Number: " + mobileNumber);
-    console.log("Email Address: " + emailAddress);
-    console.log("Appointment Date: " + appointmentDate);
-    console.log("Appointment Time: " + appointmentTime);
-    console.log("Message: " + message);
-
-    // Simulate form submission (In a real application, send this data to a server)
-    document.getElementById('appointment-response-message').innerHTML = "<p class='text-success'>Your appointment has been successfully booked. We will contact you shortly!</p>";
-
-    // Clear the form after submission
-    document.getElementById('appointment-form').reset();
-  });
 </script>
 
 </body>
